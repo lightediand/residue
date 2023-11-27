@@ -11,4 +11,6 @@ for prime in p:
             i = i - prime
         residues.add(i)
         nonresidues.discard(i)
+    if nonresidues == set():
+        nonresidues = "There are no quadratic nonresidues for this prime."
     print(prime, residues, nonresidues)
