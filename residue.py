@@ -5,8 +5,7 @@ for prime in p:
     residues = set() 
     nonresidues = set(range(1,prime))
     for i in range(1,prime):
-        q = i**2
-        i = q
+        i = i**2
         while i - prime >= 0:
             i = i - prime
         residues.add(i)
